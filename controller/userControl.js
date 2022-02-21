@@ -34,7 +34,7 @@ const UserControl = {
             }
             const token = jwt.sign({        //
                 id:user._id
-            },process.env.API_SECRET,{
+            },"This_is_very_secret_string",{
                 expiresIn:86400
                 
             })

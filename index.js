@@ -14,7 +14,7 @@ require("./router/imageRouter")(app)
 // require("./router/computerRouter")(app)
 
 const PORT=process.env.PORT || 3000    //setup server to listen on port 8080 or 3000
-mongoose.connect(process.env.MONGO_URI,{
+mongoose.connect("mongodb+srv://RANJITHATK:RANJITHATK@cluster0.irwxq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{
     // useNewUrlParser:true,
     // useUnifiedTopology:true
 }).then(()=>{
